@@ -164,3 +164,10 @@ endfunction
 function! SaveCursor()
     let s:cursor = getpos('.')
 endfunction
+
+function! RestoreCursor()
+    call setpos('.', s:cursor)
+    unlet s:cursor
+endfunction
+
+command! -range LinesCommentNextState call SaveCursor() | <line1>,<line2>call s:LinesCommentNextState() | call RestoreCursor()
