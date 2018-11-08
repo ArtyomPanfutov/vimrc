@@ -81,6 +81,9 @@ map <silent> <C-l> :call WinMove('l')<CR>
 vnoremap <C-c> "+y
 vnoremap <C-X> "+x
 map <C-v> "+p
+
+nmap hh :LinesCommentNextState <CR>
+vmap hh :LinesCommentNextState <CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! WinMove(key)
