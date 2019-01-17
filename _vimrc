@@ -46,7 +46,7 @@ colorscheme gruvbox
 syntax on
 set background=dark
 set fileencodings=utf-8,cp1251,koi8-r,cp866
-set encoding=cp1251
+set encoding=cp866
 set termencoding=utf-8                       " set terminal encoding
 
 set keymap=russian-jcukenwin
@@ -82,8 +82,8 @@ vnoremap <C-c> "+y
 vnoremap <C-X> "+x
 map <C-v> "+p
 
-nmap hh :LinesCommentNextState <CR>
-vmap hh :LinesCommentNextState <CR>
+nmap // :LinesCommentNextState <CR>
+vmap // :LinesCommentNextState <CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! WinMove(key)
