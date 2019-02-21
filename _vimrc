@@ -42,6 +42,7 @@ call plug#begin('D:\apanfutov\install\gvim_8.1.0105_x64\vim\vim81\plugged')
   Plug 'easymotion/vim-easymotion'
 call plug#end()
 
+let g:gruvbox_italic=1
 colorscheme gruvbox
 syntax on
 set background=dark
@@ -77,6 +78,9 @@ map <silent> <C-h> :call WinMove('h')<CR>
 map <silent> <C-j> :call WinMove('j')<CR>
 map <silent> <C-k> :call WinMove('k')<CR>
 map <silent> <C-l> :call WinMove('l')<CR>
+
+vnoremap < <gv
+vnoremap > >gv
 
 vnoremap <C-c> "+y
 vnoremap <C-X> "+x
@@ -119,6 +123,11 @@ function! s:LinesCommentNextState() range
         let l:comment_symbol = "\""
     elseif l:extension == "lua"
         let l:comment_symbol = "--"
+    elseif l:extension == "sql"
+        let l:comment_symbol = "--"
+    elseif l:extension == "pas"
+        let l:comment_symbol = "\/\/"
+
     else
         "default '#'
     endif
