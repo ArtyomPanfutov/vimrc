@@ -46,13 +46,20 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 syntax on
 set background=dark
-set fileencodings=utf-8,cp1251,koi8-r,cp866
+set fileencodings=cp866,utf-8,cp1251,koi8-r
 set encoding=cp866
 set termencoding=utf-8                       " set terminal encoding
 
-set keymap=russian-jcukenwin
 set langmenu=en_US
 let $LANG = 'en_US'
+set keymap=russian-jcukenwin
+" English at start (start > i)
+set iminsert=0 
+" Search in english at start (start > /)
+set imsearch=0 
+" Change lang 
+inoremap <C-l> <C-^> 
+highlight lCursor guifg=NONE guibg=Cyan " Смена цвета курсора
 let c_comment_strings=1
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
