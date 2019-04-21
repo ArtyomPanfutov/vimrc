@@ -42,9 +42,15 @@ call plug#begin('D:\apanfutov\install\gvim_8.1.0105_x64\vim\vim81\plugged')
   Plug 'easymotion/vim-easymotion'
 call plug#end()
 
+autocmd GUIEnter * silent! WToggleClean
+
 let g:gruvbox_italic=1
 colorscheme gruvbox
 syntax on
+
+" vimtweak calls 
+call libcallnr("vimtweak64.dll", "SetAlpha", 240)
+
 set background=dark
 set fileencodings=cp866,utf-8,cp1251,koi8-r
 set encoding=cp866
@@ -57,6 +63,7 @@ set keymap=russian-jcukenwin
 set iminsert=0 
 " Search in english at start (start > /)
 set imsearch=0 
+set guifont=Lucida\ Console:h9
 " Change lang 
 inoremap <C-l> <C-^> 
 highlight lCursor guifg=NONE guibg=Cyan " Смена цвета курсора
