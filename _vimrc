@@ -76,6 +76,7 @@ highlight lCursor guifg=NONE guibg=Cyan
 
 autocmd vimenter * NERDTree
 set number
+set relativenumber
 
 let g:mapleader=','
 set expandtab
@@ -97,9 +98,9 @@ map <silent> <C-l> :call WinMove('l')<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-vnoremap <C-c> "+y
-vnoremap <C-X> "+x
-map <C-v> "+p
+"vnoremap <C-c> "+y
+"vnoremap <C-X> "+x
+"map <C-v> "+p
 
 nmap // :LinesCommentNextState <CR>
 vmap // :LinesCommentNextState <CR>
