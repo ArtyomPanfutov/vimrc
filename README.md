@@ -1,4 +1,4 @@
-### My configuration file for vim
+### My configuration for vim
 
 There are three main branches containing platform-specific vimrc and some additional stuff to make vim work with this vimrc:
   * for UNIX-based operating systems 
