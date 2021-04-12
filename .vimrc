@@ -49,7 +49,7 @@ syntax on
 
 set background=dark
 set fileencodings=utf-8,cp1251,cp866,koi8-r
-set encoding=cp866
+set encoding=utf-8
 set termencoding=utf-8                       " set terminal encoding
 
 set langmenu=en_US
