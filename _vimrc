@@ -66,7 +66,7 @@ set imsearch=0
 set guifont=Lucida\ Console:h9
 " Change lang 
 inoremap <C-l> <C-^> 
-highlight lCursor guifg=NONE guibg=Cyan " Смена цвета курсора
+highlight lCursor guifg=NONE guibg=Cyan " Г‘Г¬ГҐГ­Г  Г¶ГўГҐГІГ  ГЄГіГ°Г±Г®Г°Г 
 let c_comment_strings=1
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
@@ -97,6 +97,7 @@ map <silent> <C-l> :call WinMove('l')<CR>
 
 vnoremap < <gv
 vnoremap > >gv
+vnoremap p "0p
 
 "vnoremap <C-c> "+y
 "vnoremap <C-X> "+x
