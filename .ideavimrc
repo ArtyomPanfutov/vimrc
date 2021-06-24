@@ -45,6 +45,7 @@ map <silent> <C-l> :call WinMove('l')<CR>
 
 vnoremap < <gv
 vnoremap > >gv
+vnoremap p "0p 
 
 vnoremap <C-c> "+y
 vnoremap <C-X> "+x
